@@ -107,16 +107,22 @@ header {
 .section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 40px 20px;
   gap: 50px;
 }
 
-.info {
-  background-image: url('https://bing.com/th/id/BCO.3d6a86cc-a180-42f6-beff-08e8b9e187e2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.infa {
+  width: 300px;
+  flex: 1 1 300px;
+}
+
+.catalog-infa {
+  width: 90%;
+  max-width: 680px;
+  text-align: center;
+  justify-content: center;
+  flex: 1 1 100%;
 }
 
 .infa,
@@ -127,15 +133,7 @@ header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.infa {
-  width: 300px;
-}
 
-.catalog-infa {
-  width: 680px;
-  text-align: center;
-  justify-content: center;
-}
 
 
 
