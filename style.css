@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+.Logo {
+  width: 120px;
+  height: 80px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: lightgrey;
+ 
+}
+
+header {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  margin-top: 40px;
+}
+
+
+
+.hero {
+  background-image: url('https://cdn.leonardo.ai/users/5a09cc9d-4e84-4b25-9798-6bb1c4f9a2b1/generations/76cc5cba-a111-497e-8ee3-43252b2b2d82/segments/3:4:1/Lucid_Realism_a_burned_and_charred_pizza_with_a_crispy_crust_a_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero h1 span {
+  color: orange;
+}
+
+.tagline {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+.cta-button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+ 
+}
+
+.cta-button:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  gap: 50px;
+}
+
+.info {
+  background-image: url('https://bing.com/th/id/BCO.3d6a86cc-a180-42f6-beff-08e8b9e187e2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infa,
+.catalog-infa {
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.infa {
+  width: 300px;
+}
+
+.catalog-infa {
+  width: 680px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.infa h2,
+.catalog-infa h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.infa ul,
+.catalog-infa ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.infa ul li,
+.catalog-infa ul li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+button {
+  background-color: #ff7300;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e25d00;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+.pizza-builder-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-image: url('https://bing.com/th/id/BCO.c9c9624c-8a2c-487e-a9e8-c45348b17cb5.png'); /* умовний фон */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pizza-builder-card {
+  
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  max-width: 500px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.pizza-builder-card h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-group select {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.form-group label input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+form button[type="submit"] {
+  background-color: #ff7300;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  background-color: #e25d00;
+}
+
+nav:hover {
+  transition: 0.5s;
+ height:  80px;
+}
+nav a:hover {
+   transition: 0.3s;
+   font-size: 20px;
+   color: darkorange;
+   text-decoration: underline;
+}
+
+.challenge-posts {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-image: url('https://bing.com/th/id/BCO.5b389fba-123e-41ca-9436-2fbd371a3371.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.post-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.post-block.left {
+  flex-direction: row;
+}
+
+.post-block.right {
+  flex-direction: row-reverse;
+}
+
+.post-block img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.post-text {
+  max-width: 400px;
+ 
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.post-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-text p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+
+.pizza-catalog {
+   background-image: url('https://bing.com/th/id/BCO.3dac037a-bc79-4789-b09e-b429debad53e.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #fff8ee;
+}
+
+.pizza-item {
+  width: 260px;
+  background-color: #645c4ae7;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 400px;
+}
+
+.pizza-item:hover {
+  transform: scale(1.05);
+}
+
+.pizza-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.pizza-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: #ff3c00;
+  font-weight: bold;
+}
+
+.order-btn {
+  background-color: #ff7300;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #e25d00;
+}
+
+.footer {
+  background-color: Black;
+  color: #eee;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: orange;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: orange;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.social-icons a img:hover {
+  opacity: 1;
+}
+.social-icons img{
+  border-radius: 5px;
+}
+
+.order-section {
+   background-image: url('https://bing.com/th/id/BCO.40e6ed4c-0ab5-46bf-bb8e-76d10aae379f.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.order-section h3 {
+  font-size: 24px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.order-section ol {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.order-section ol li {
+  margin-bottom: 12px;
+}
+
+.o {
+  color: #ffcc99;
+  text-decoration: underline;
+}
+.cta-button a {
+  color: black;
+}
+
+
+
