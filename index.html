@@ -1,484 +1,302 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
- 
-}
-.Logo {
-  width: 120px;
-  height: 80px;
-  margin-right: 100px;
-  margin-left: 20px;
-}
-nav {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
 
-nav a {
-  text-decoration: none;
-  color: lightgrey;
- 
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Boom</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-header {
-  height: 350px;
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
-  margin-top: 40px;
-}
+  <nav>
+    <img class="Logo" src="https://bing.com/th/id/BCO.c48c7527-d1de-425c-97b5-1c10f852e949.png">
+    <a href="#Catalog">Каталог</a>
+    <a href="#Contacts">Контактна інформація</a>
+    <a href="#About-Us">Про нас</a>
+    <a href="#Order">Як замовити</a>
+  </nav>
 
+ <header class="hero">
+  <div class="hero-content">
+    <h1>Pizza <span>Boom</span></h1>
+    <p class="tagline">Швидше, ніж ти встигнеш сказати «Ммм!»</p>
+    <a href="#order" class="cta-button">🍕 Замовити зараз</a>
+  </div>
+</header>
 
+  <main>
+    <section id="About-Us" class="info">
+    <section class="section">
+      <div class="infa">
+        <h2>Що таке Pizza Boom?</h2>
+        <p>Pizza Boom — це не просто піца. Це технологія, що дарує смак, швидкість і вау-ефект! Ми поєднали штучний інтелект, кулінарне мистецтво й автоматизацію, щоб створити революцію у світі піци.</p>
+        <ul>
+          <li>⚡ Замовлення — за 10 секунд</li>
+          <li>🔥 Приготування — за 3 хвилини</li>
+          <li>📱 Контроль у реальному часі</li>
+        </ul>
+      </div>
 
-.hero {
-  background-image: url('https://cdn.leonardo.ai/users/5a09cc9d-4e84-4b25-9798-6bb1c4f9a2b1/generations/76cc5cba-a111-497e-8ee3-43252b2b2d82/segments/3:4:1/Lucid_Realism_a_burned_and_charred_pizza_with_a_crispy_crust_a_2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
+      <div class="infa">
+        <h2>Твоя піца. Твій стиль.</h2>
+        <p>Обери тісто, соус, начинку та створи власну піцу у нашому конструкторі. Ми покажемо, як виглядатиме твоя страва перед замовленням!</p>
+        <br>
+        <a href="#pizza-builder" class="cta-button">Створити свою піцу</a>
+      </div>
+    </section>
 
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
+    <section class="section">
+      <div class="infa">
+        <h2>PizzaBoom Challenge</h2>
+        <p>Покажи, як ти любиш піцу — отримай знижку! Щомісяця обираємо найкреативніші фото з хештегом #PizzaBoom.</p>
+        <ul>
+          <li>📸 Фото з піцою</li>
+          <li>📲 Хештег #PizzaBoom</li>
+          <li>🎁 Призи щомісяця</li>
+        </ul>
+        <br>
+        <a href="#Posts" class="cta-button">Челенджд</a>
+      </div>
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 20px;
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 60px;
-  font-weight: 900;
-  margin: 0;
-  line-height: 1.1;
-  color: #fff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-}
-
-.hero h1 span {
-  color: orange;
-}
-
-.tagline {
-  font-size: 20px;
-  font-style: italic;
-  margin-top: 10px;
-  color: #f0f0f0;
-}
-
-.cta-button {
-  margin-top: 25px;
-  padding: 12px 28px;
-  font-size: 16px;
-  background-color: orange;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
- 
-}
-
-.cta-button:hover {
-  background-color: darkorange;
-  transform: scale(1.05);
-}
-
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 40px 20px;
-  gap: 50px;
-}
-
-.info {
-  background-image: url('https://bing.com/th/id/BCO.3d6a86cc-a180-42f6-beff-08e8b9e187e2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.infa,
-.catalog-infa {
-  padding: 20px;
-  border-radius: 20px;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.infa {
-  width: 300px;
-}
-
-.catalog-infa {
-  width: 680px;
-  text-align: center;
-  justify-content: center;
-}
+      <div class="infa">
+        <h2>Яка ти піца?</h2>
+        <p>Пройди веселий тест і дізнайся, яка піца тобі пасує. А ми запропонуємо тобі саме ту!</p>
+        <br>
+        <a href="https://izum.ua/test-yaka-ty-picza-diznajsya-yaka-nachynka-vidobrazhaye-tvoyu-dushu/" class="cta-button">Пройти тест</a>
+      </div>
+      <div class="catalog-infa">
+         <h2>Каталог піцц</h2>
+        <p>Не хочеш створювати власну піццу? Тоді це для тебе - тут представлені найкращі піцци які створюють наші клієнти, а якщо хочеш звичайнісіньку тоді дивися нижче - там представлені стандартні піцци!</p>
+        <br>
+        <a href="#Catalog" class="cta-button">Каталог піцц</a>
+      </div>
+    </section>
+    </section>
 
 
 
-.infa h2,
-.catalog-infa h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+    <section id="pizza-builder" class="pizza-builder-section">
+  <div class="pizza-builder-card">
+    <h2>🧑‍🍳 Конструктор Піци</h2>
+    <p>Створи свою піцу: обери тісто, соус і начинки 👇</p>
 
-.infa ul,
-.catalog-infa ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    <form>
+      <div class="form-group">
+        <label for="base">🍞 Тісто</label>
+        <select id="base" name="base">
+          <option value="традиційне">Традиційне</option>
+          <option value="тонке">Тонке</option>
+          <option value="повітряне">Повітряне</option>
+        </select>
+      </div>
 
-.infa ul li,
-.catalog-infa ul li {
-  margin-bottom: 5px;
-  list-style: none;
-}
+      <div class="form-group">
+        <label for="sauce">🫕 Соус</label>
+        <select id="sauce" name="sauce">
+          <option value="томатний">Томатний</option>
+          <option value="вершковий">Вершковий</option>
+          <option value="барбекю">BBQ</option>
+        </select>
+      </div>
 
-button {
-  background-color: #ff7300;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s;
-}
+      <div class="form-group">
+        <label>🍕 Начинка</label>
+        <label><input type="checkbox" name="topping" value="сир"> 🧀 Сир</label>
+        <label><input type="checkbox" name="topping" value="шинка"> 🐖 Шинка</label>
+        <label><input type="checkbox" name="topping" value="гриби"> 🍄 Гриби</label>
+        <label><input type="checkbox" name="topping" value="кукурудза"> 🌽 Кукурудза</label>
+        <label><input type="checkbox" name="topping" value="перець"> 🫑 Перець</label>
+        <label><input type="checkbox" name="topping" value="пепероні"> 🌶️ Пепероні</label>
+      </div>
 
-button:hover {
-  background-color: #e25d00;
-}
+      <a class="cta-button" type="submit">✅ Замовити власну піццу</a>
+    </form>
+  </div>
+</section>
 
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-.pizza-builder-section {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-  background-image: url('https://bing.com/th/id/BCO.c9c9624c-8a2c-487e-a9e8-c45348b17cb5.png'); /* умовний фон */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.pizza-builder-card {
+
+<section id="Posts" class="challenge-posts">
+  <div class="post-block left">
+    <img src="https://bing.com/th/id/BCO.90a96e0e-322a-495b-8883-bfa1fab13862.png" alt="Фото учасника 1">
+    <div class="post-text">
+      <h3>@pizza_lover_ua</h3>
+      <p>Моя піца з перцем, грибами і сиром — ідеальне поєднання 🔥 #PizzaBoom</p>
+    </div>
+  </div>
+
+  <div class="post-block right">
+    <div class="post-text">
+      <h3>@cheesy_bite</h3>
+      
+      <ul>🧄Запашна часникова основа з травами
+        <br>
+<li>Повітряне тісто на заквасці</li>
+<br>
+<li>Вершково-томатний соус (50/50 для глибини смаку)</li>
+<br>
+<li>🧀 Мікс сирів: Моцарела, Горгонзола, Пармезан</li>
+<br>
+<li>🍄 Гриби портобелло, обсмажені в маслі</li>
+<br>
+<li>🌰 Смажений лук-шалот</li>
+<br>
+<li>Три види перцю — солодкий, чилі та жовтий</li>
+<br>
+<li>🥓 Мʼякий прошутто, злегка запечений</li>
+<br>
+<li>🌿 Базилік і розмарин для аромату</li>
+<br>
+<li>🍯 Краплі медово-бальзамічної глазурі зверху</li> 🍕 #PizzaBoom
+</ul>
+    </div>
+    <img src="https://bing.com/th/id/BCO.5388dad0-595e-42c9-adc3-565d0f337a38.png" alt="Фото учасника 2">
+  </div>
+
+  <div class="post-block left">
+    <img src="https://bing.com/th/id/BCO.e2b2e323-95a7-41b5-b742-6e574f11f8f6.png"  alt="Фото учасника 3">
+    <div class="post-text">
+      <h3>@tomato_soul</h3>
+      <p>🍞 Тонке тісто на оливковій олії з кукурудзяним борошном
+<br>
+🍄 Трюфельний соус з вершками та чорними грибами
+<br>
+🧀 Суміш сирів: Пекоріно, Моцарела, Брі
+<br>
+🥓 Запечене м’ясо ягняти з розмарином
+<br>
+🫒 Чорні маслини, розрізані навпіл
+<br>
+🌶️ Вʼялений червоний чилі, для легкого фону тепла
+<br>
+🥬 Рукола, додана після випічки
+<br>
+🍋 Краплі лимонного олійного міксу для контрасту 👀 #PizzaBoom</p>
+    </div>
+  </div>
+</section>
+
+<section id="Catalog" class="pizza-catalog">
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.8890ea82-f8a1-4169-9cb1-c33b9ece6abf.png" alt="Margherita">
+    <h3>🍅 Margharita</h3>
+    <p class="price">
+      <span class="old-price">€12.00</span>
+      <span class="new-price">€9.50</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.edb2f769-f813-4075-bdea-020b3f670453.png" alt="Pepperoni Blaze">
+    <h3>🌶️ Pepperoni Blaze</h3>
+    <p class="price">
+      <span class="old-price">€13.50</span>
+      <span class="new-price">€10.00</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.a3dd884c-0b23-4b37-a6ab-0bc4ed6e12ea.png" alt="Mushroom Forest">
+    <h3>🍄 Mushroom Forest</h3>
+    <p class="price">
+      <span class="old-price">€11.00</span>
+      <span class="new-price">€8.80</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.a089427d-5b5f-42ea-a43c-d4a7719f5687.png" alt="Hawaiian Sunset">
+    <h3>🍍 Hawaiian Sunset</h3>
+    <p class="price">
+      <span class="old-price">€12.50</span>
+      <span class="new-price">€9.90</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.e2d7628d-9598-42b2-97be-881c1ce64cc6.png" alt="Four Cheese Glory">
+    <h3>🧀 Cheese Glory</h3>
+    <p class="price">
+      <span class="old-price">€13.00</span>
+      <span class="new-price">€10.20</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+
+  <div class="pizza-item">
+    <img src="https://bing.com/th/id/BCO.3f607f96-424e-44dd-9ad1-5034558d8cce.png" alt="Vegan Garden">
+    <h3>🥦 Vegan Garden</h3>
+    <p class="price">
+      <span class="old-price">€11.50</span>
+      <span class="new-price">€9.00</span>
+    </p>
+    <a href="#" class="cta-button">Замовити</a>
+  </div>
+</section>
+
+<section id="Order" class="order-section">
+  <h3>Як замовити піцу?</h3>
+  <ol>
+    <li>Обери улюблену піцу з <a class="o" href="#Catalog">каталогу</a></li>
+    <li>Натисни “Замовити” та додай до кошика</li>
+    <li>Оформи доставку: введи адресу, вибери час</li>
+    <li>Оплати онлайн або при отриманні</li>
+  </ol>
+  <a  href="https://pizzaboompalma.com/" target="_blank" class="cta-button">
+    Перейти до замовлення 🍕
+  </a>
+</section>
+
+  </main>
+
+ <footer id="Contacts" class="footer">
+  <div class="footer-column">
+    <h4>Компанія</h4>
+    <ul>
+      <li><a href="#about">Про нас</a></li>
+      <li><a href="#services">Наші послуги</a></li>
+      <li><a href="#privacy">Політика конфіденційності</a></li>
+      <li><a href="#terms">Умови використання</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h4>Допомога</h4>
+    <ul>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#delivery">Доставка</a></li>
+      <li><a href="#returns">Повернення</a></li>
+      <li><a href="#payment">Оплата</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h4>Меню</h4>
+    <ul>
+      <li><a href="#catalog">Піци</a></li>
+      <li><a href="#calzones">Кальцоне</a></li>
+      <li><a href="#pastas">Пасти</a></li>
+      <li><a href="#drinks">Напої</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h4>Ми в соцмережах</h4>
+    <div class="social-icons">
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hwf81TGukBQPipbMl5cExG1fWbuKEfeucA&s" alt="Facebook"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s" alt="Instagram"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_8cOCNTmfp96C563Tv1y8BguWtMrp1G2bA&s" alt="TikTok"></a>
+    </div>
+  </div>
+
   
-  padding: 30px;
-  border-radius: 20px;
-  color: white;
-  max-width: 500px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-}
-
-.pizza-builder-card h2 {
-  margin-top: 0;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.form-group select {
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-  font-family: inherit;
-  font-size: 14px;
-}
-
-.form-group input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.form-group label input {
-  margin-right: 10px;
-  margin-top: 5px;
-}
-
-form button[type="submit"] {
-  background-color: #ff7300;
-  border: none;
-  padding: 12px 24px;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
-}
-
-form button[type="submit"]:hover {
-  background-color: #e25d00;
-}
-
-nav:hover {
-  transition: 0.5s;
- height:  80px;
-}
-nav a:hover {
-   transition: 0.3s;
-   font-size: 20px;
-   color: darkorange;
-   text-decoration: underline;
-}
-
-.challenge-posts {
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  background-image: url('https://bing.com/th/id/BCO.5b389fba-123e-41ca-9436-2fbd371a3371.png'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.post-block {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.post-block.left {
-  flex-direction: row;
-}
-
-.post-block.right {
-  flex-direction: row-reverse;
-}
-
-.post-block img {
-  width: 280px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.post-text {
-  max-width: 400px;
- 
-  padding: 20px;
-  border-radius: 12px;
-  color: white;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.post-text h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.post-text p {
-  margin-top: 10px;
-  font-size: 15px;
-}
+</footer>
 
 
-.pizza-catalog {
-   background-image: url('https://bing.com/th/id/BCO.3dac037a-bc79-4789-b09e-b429debad53e.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 60px 20px;
-  background-color: #fff8ee;
-}
-
-.pizza-item {
-  width: 260px;
-  background-color: #645c4ae7;
-  border-radius: 16px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  height: 400px;
-}
-
-.pizza-item:hover {
-  transform: scale(1.05);
-}
-
-.pizza-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-
-.pizza-item h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.price {
-  font-size: 16px;
-  margin-bottom: 22px;
-}
-
-.old-price {
-  text-decoration: line-through;
-  color: #888;
-  margin-right: 8px;
-}
-
-.new-price {
-  color: #ff3c00;
-  font-weight: bold;
-}
-
-.order-btn {
-  background-color: #ff7300;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.order-btn:hover {
-  background-color: #e25d00;
-}
-
-.footer {
-  background-color: Black;
-  color: #eee;
-  padding: 40px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-column {
-  flex: 1 1 200px;
-}
-
-.footer-column h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: orange;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 8px;
-}
-
-.footer-column ul li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-  color: orange;
-}
-
-.social-icons a img {
-  width: 24px;
-  margin-right: 10px;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-
-.social-icons a img:hover {
-  opacity: 1;
-}
-.social-icons img{
-  border-radius: 5px;
-}
-
-.order-section {
-   background-image: url('https://bing.com/th/id/BCO.40e6ed4c-0ab5-46bf-bb8e-76d10aae379f.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #f4f4f4;
-  padding: 50px 20px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.order-section h3 {
-  font-size: 24px;
-  color: orange;
-  margin-bottom: 20px;
-}
-
-.order-section ol {
-  text-align: left;
-  max-width: 500px;
-  margin: 0 auto 30px;
-  padding-left: 20px;
-  line-height: 1.8;
-}
-
-.order-section ol li {
-  margin-bottom: 12px;
-}
-
-.o {
-  color: #ffcc99;
-  text-decoration: underline;
-}
-.cta-button a {
-  color: black;
-}
-
-
-
+</body>
+</html>
